@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="SignIn.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        .box {
+            width: 100%;
+            max-width: 400px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 16px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .google-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="table-responsive">
+            <h3>LOGIN USING GOOGLE ACCOUNT</h3>
+            <div class="box">
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" 
+                           name="email"
+                           id="email"
+                           placeholder="Enter Email"
+                           class="form-control" 
+                           required>
+                </div>
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" 
+                           name="pwd"
+                           id="pwd"
+                           placeholder="Enter Password"
+                           class="form-control" 
+                           required>
+                </div>
+                <!-- Submit -->
+                <div class="form-group">
+                    <input type="submit" 
+                           id="login"
+                           name="login"
+                           value="Login"
+                           class="btn btn-success form-control">
+                    <hr>
+                    <div class="google-login">
+                        <center>
+                            <img src="img/google.jpg" width="30" alt="Google Login">
+                            <p>Sign in with Google</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
